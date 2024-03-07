@@ -1,9 +1,6 @@
 ## Ejercicio #1
-
-'''
-----
 PseudoCodigo
-
+```
 Inicio
     Definir a Como Real;
     
@@ -24,9 +21,10 @@ Inicio
     FinSi  
 
 Fin
-----
-Python
+```
+### **Python**
 
+```python
 a = float(input("Ingrese un digito: "))
 
 If a >= 5:
@@ -36,11 +34,9 @@ If a >= 5:
 Else:
 
     print("El número es menor que 5: ")
-----
-'''
-----
+```
 #PseudoCodigo
-
+```
 Inicio
 
     Definir nr, cnr Como Real;
@@ -67,11 +63,10 @@ Inicio
 
     FinSi
 Fin
-'''
-----
-'''
-#Python
+```
+### **Python**
 
+```python
 nr = 0.0
 
 cnr = 0.0
@@ -89,247 +84,264 @@ If cnr >= 5000:
 Else:
 
     print("El número es menor a 5000: ")
-'''
-----
-PseudoCodigo
-## ejercicio 1
+```
+# TALLER
 
-    -  Tres personas deciden invertir su dinero para fundar una empresa. Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje que cada quien invierte con respecto a la cantidad total invertida.
+## 1) Tres personas deciden invertir su dinero para fundar una empresa. Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje que cada quien invierte con respecto a la cantidad total invertida.
+
+### **Pseudocodigo**
+
+```
 Inicio
 
-    Definir P, P2, P3, por, Por2, Por3, tot Como Real;
+  Definir p1, p2, p3, por1, por2, por3, totl Como Real
 
-    P1 = 0.0;
-    
-    P2 = 0.0;
-    
-    P3 = 0.0
-    
-    por = 0.0;
-    
-    Por2 = 0.0;
-    
-    Por3 = 0.0;
-    
-    tot = 0.0;
+  p1 = 0.0
+  p2 = 0.0
+  p3 = 0.0
+  por1 = 0.0
+  por2 = 0.0
+  por3 = 0.0
+  totl = 0.0
 
-    Escribir"Porfavor ingrese la inversión de la persona 1: ";
+  Escribir "Por favor ingrese la inversión de la persona 1"
+  Leer p1
+  Escribir "Por favor ingrese la inversión de la persona 2"
+  Leer p2
+  Escribir "Por favor ingrese la inversión de la persona 3"
+  Leer p3
 
-    Leer p1;
+  totl = p1+p2+p3
+  por1 = (p1/totl)*100
+  por2 = (p2/totl)*100
+  por3 = (p3/totl)*100
 
-    Escribir"Porfavor ingrese la inversión de la persona 2: ";
-
-    Leer p2;
-
-    Escribir"Porfavor ingrese la inversión de la persona 3: ";
-
-    Leer p3;
-
-    tot = (p1+p2+p3);
-
-    por1 = (P1/tot)*100
-    
-    por2 = (P2/tot)*100
-
-    por3 = (P3/tot)*100
-
-    Escribir"La inversion total fué de: ",tot,"$"
-
-    Escribir"El porcentaje de la inverión de la persona 1 es de: ",por1,"%"
-
-    Escribir"El porcentaje de la inverión de la persona 2 es de: ",por2,"%"
-
-    Escribir"El porcentaje de la inverión de la persona 3 es de: ",por3,"%"
+  Escribir "La inversión total fue de ",totl,"$"
+  Escribir " El porcentaje de inversión de la persona 1 es de ",por1,"%"
+  Escribir " El porcentaje de inversión de la persona 2 es de ",por2,"%"
+  Escribir " El porcentaje de inversión de la persona 3 es de ",por3,"%"
 
 Fin
-----
-Python
+```
 
-P1 = float(input("Porfavor ingrese la inversión de la persona 1: "))
+### **Python**
 
-P2 = float(input("Porfavor ingrese la inversión de la persona 2: "))
+```py
+p1 = float(input("Por favor ingrese la inversión de la persona 1: "))
+p2 = float(input("Por favor ingrese la inversión de la persona 2: "))
+p3 = float(input("Por favor ingrese la inversión de la persona 3: "))
 
-P2 = float(input("Porfavor ingrese la inversión de la persona 3: "))
+totl = p1+p2+p3
+por1 = (p1/totl)*100
+por2 = (p2/totl)*100
+por3 = (p3/totl)*100
 
-tot = P1+P2+P3
+print("La inversión total fue de ",totl,"$")
+print("El porcentaje de inversión de la persona 1 es de ",por1,"%")
+print("El porcentaje de inversión de la persona 2 es de ",por2,"%")
+print("El porcentaje de inversión de la persona 3 es de ",por3,"%")
+```
 
-Por1 = (P1/tot)*100
+## 2) Un alumno desea saber cuál será su promedio general en las tres materias más difíciles que cursa y cuál será el promedio que obtendrá en cada una de ellas. Estas materias se evalúan como se muestra a continuación:
 
-Por2 = (P2/tot)*100
+    - La calificación de Matemáticas se obtiene de la siguiente manera: Examen 90% Promedio de tareas 10% En esta materia se pidió un total de tres tareas.
 
-Por3 = (P3/tot)*100
+    - La calificación de Física se obtiene de la siguiente manera: Examen 80% Promedio de tareas 20% En esta materia se pidió un total de dos tareas.
 
-print("la inversión total fué de: ",tot,"$")
+    - La calificación de Química se obtiene de la siguiente manera: Examen 85% Promedio de tareas 15% En esta materia se pidió un promedio de tres tareas.
 
-print("El porcentaje de la inversión de la persona 1 es de: ",Por1,"%")
+### **Pseudocodigo**
 
-print("El porcentaje de la inversión de la persona 2 es de: ",Por2,"%")
-
-print("El porcentaje de la inversión de la persona 3 es de: ",Por3,"%")
----
-PseudoCodigo
-
-## ejercicio 2
-
-    -Un alumno desea saber cuál será su promedio general en las tres materias más difíciles que cursa y cuál será el promedio que obtendrá en cada una de ellas. Estas materias se evalúan como se muestra a continuación:
-
-La calificación de Matemáticas se obtiene de la siguiente manera: Examen 90% Promedio de tareas 10% En esta materia se pidió un total de tres tareas.
-
-La calificación de Física se obtiene de la siguiente manera: Examen 80% Promedio de tareas 20% En esta materia se pidió un total de dos tareas.
-
-La calificación de Química se obtiene de la siguiente manera: Examen 85% Promedio de tareas 15% En esta materia se pidió un promedio de tres tareas.
-
+```
 Inicio
 
-    Definir Exm, tm1, tm2, tm3, protp, prom, Exf, tf1, tf2, protf, prof, Exq, tq1, tq2, tq3, protq, proq, pro Como Real;
+  Definir exm, tm1, tm2, tm3, protm, prom, exf, tf1, tf2, protf, prof, exq, tq1, tq2, tq3, protq, proq, pro Como Real
 
-    Exm  = 0.0
-    
-    tm1  = 0.0
-    
-    tm2  = 0.0
-    
-    tm3  = 0.0
-    
-    protp  = 0.0
-    
-    prom  = 0.0
-    
-    Exf  = 0.0
-    
-    tf1  = 0.0
-    
-    tf2  = 0.0
-    
-    protf  = 0.0
-    
-    prof  = 0.0
-    
-    Exq  = 0.0
+  exm = 0.0
+  tm1 = 0.0
+  tm2 = 0.0
+  tm3 = 0.0
+  protm = 0.0
+  prom = 0.0
+  exf = 0.0
+  tf1 = 0.0
+  tf2 = 0.0
+  protf = 0.0
+  prof = 0.0
+  exq = 0.0
+  tq1 = 0.0
+  tq2 = 0.0
+  tq3 = 0.0
+  protq = 0.0
+  proq = 0.0
+  pro = 0.0
 
-    tq1  = 0.0
-    
-    tq2  = 0.0
-    
-    tq3  = 0.0
-    
-    protq  = 0.0
-    
-    proq  = 0.0
-    
-    pro  = 0.0
+  Escribir "Ingrese el puntaje obtenido en el examen de matemáticas"
+  Leer exm
+  Escribir "Ingrese el puntaje obtenido en la tarea 1 de matemáticas"
+  Leer tm1
+  Escribir "Ingrese el puntaje obtenido en la tarea 2 de matemáticas"
+  Leer tm2
+  Escribir "Ingrese el puntaje obtenido en la tarea 3 de matemáticas"
+  Leer tm3
+  Escribir "Ingrese el puntaje obtenido en el examen de física"
+  Leer exf
+  Escribir "Ingrese el puntaje obtenido en la tarea 1 de física"
+  Leer tf1
+  Escribir "Ingrese el puntaje obtenido en la tarea 2 de física"
+  Leer tf2
+  Escribir "Ingrese el puntaje obtenido en el examen de químicia"
+  Leer exq
+  Escribir "Ingrese el puntaje obtenido en la tarea 1 de química"
+  Leer tq1
+  Escribir "Ingrese el puntaje obtenido en la tarea 2 de química"
+  Leer tq2
+  Escribir "Ingrese el puntaje obtenido en la tarea 3 de química"
+  Leer tq3
 
-    Escribir"Ingrese el puntaje obtenido en el examen de matemáticas";
+  protm = (tm1+tm2+tm3)/3
+  prom = (exm*0.9)+(protm*0.1)
+  protf = (tf1+tf2)/2
+  prof = (exf*0.8)+(protf*0.2)
+  protq = (tq1+tq2+tq3)/3
+  proq = (exq*0.85)+(protq*0.15)
+  pro = (prom+prof+proq)/3
 
-    Leer Exm;
-
-    Escribir"Ingrese el puntaje obtenido de la tarea 1 de matemáticas";
-
-    Leer tm1;
-
-    Escribir"Ingrese el puntaje obtenido de la tarea de matemáticas";
-
-    Leer tm2;
-
-    Escribir"Ingrese el puntaje obtenido de la tarea de matemáticas";
-
-    Leer tm3;
-    
-    Escribir"Ingrese el puntaje obtenido en el examen de física";
-
-    Leer exf;
-
-    Escribir"Ingrese el puntaje obtenido de la tarea de física 1";
-
-    Leer tf1;
-
-    Escribir"Ingrese el puntaje obtenido de la tarea de física 2";
-
-    Leer tf2;
-
-    Escribir"Ingrese el puntaje obtenido en el examen de quimica";
-
-    Leer Exq;
-
-    Escribir"Ingrese el puntaje obtenido de la tarea de química 1";
-
-    Leer tq1;
-
-    Escribir"Ingrese el puntaje obtenido de la tarea de química 2";
-
-    Leer tq2;
-
-    Escribir"Ingrese el puntaje obtenido de la tarea de química 3";
-
-    Leer tq3;
-
-    protm = (tm1+tm2+tm3)/3;
-
-    prom = (Exm*0.9)+(protm*0.1);
-
-    protf = (tf1+tf2)/2;
-
-    prof = (Exf*0.8)+(protf*0.2);
-    
-    protq = (tq1+tq2+tq3)/3;
-
-    proq = (Exq*0.85)+(protf*0.15);
-
-    pro = (prom+prof+proq)/3;
-
-    Escribir"El promedio de matemáticas es de: ",prom
-
-    Escribir"El promedio de física es de: ",prof
-
-    Escribir"El promedio de química es de: ",proq
-
-    Escribir"El promedio total de las 3 materias es de: ",pro
+  Escribir "El promedio de matemáticas es de ",prom
+  Escribir "El promedio de física es de ",prof
+  Escribir "El promedio de química es de ",proq
+  Escribir "El promedio total de las 3 materias es de ",pro
 
 Fin
----
-Python
+```
 
+### **Python**
+
+```python
 exm = float(input("Ingrese el puntaje obtenido en el examen de matemáticas: "))
-
 tm1 = float(input("Ingrese el puntaje obtenido en la tarea 1 de matemáticas: "))
-
 tm2 = float(input("Ingrese el puntaje obtenido en la tarea 2 de matemáticas: "))
-
 tm3 = float(input("Ingrese el puntaje obtenido en la tarea 3 de matemáticas: "))
-
 exf = float(input("Ingrese el puntaje obtenido en el examen de física: "))
-
 tf1 = float(input("Ingrese el puntaje obtenido en la tarea 1 de física: "))
-
 tf2 = float(input("Ingrese el puntaje obtenido en la tarea 2 de física: "))
-
 exq = float(input("Ingrese el puntaje obtenido en el examen de Química: "))
-
 tq1 = float(input("Ingrese el puntaje obtenido en la tarea 1 de Química: "))
-
 tq2 = float(input("Ingrese el puntaje obtenido en la tarea 2 de Química: "))
-
 tq3 = float(input("Ingrese el puntaje obtenido en la tarea 3 de Química: "))
 
 protm = (tm1+tm2+tm3)/3
-
-prom = (Exm*0.9)+(protm*0.1)
-
+prom = (exm*0.9)+(protm*0.1)
 protf = (tf1+tf2)/2
-
-prof = (Exf*0.8)+(protf*0.2)
- 
+prof = (exf*0.8)+(protf*0.2)
 protq = (tq1+tq2+tq3)/3
-
-proq = (Exq*0.85)+(protf*0.15)
-
+proq = (exq*0.85)+(protq*0.15)
 pro = (prom+prof+proq)/3
 
-
 print("El promedio de matemáticas es de ",prom)
-
 print("El promedio de física es de ",prof)
-
 print("El promedio de química es de ",proq)
-
 print("El promedio total de las 3 materias es de ",pro)
+```
+
+## 3) Leer un real e imprimir si el número es positivo o negativo.
+
+### **Pseudocodigo**
+
+```
+Inicio
+
+  Definir num Como Real
+
+  num = 0.0
+  
+  Escribir "Digite el número que desee"
+  Leer num
+
+  Si (num<0):
+    Escribir "El número digitado es negativo"
+  Sino:
+    Escribir "El número digitado es positivo"
+  Finsi
+
+Fin
+```
+
+### **Python**
+
+```python
+num = float(input("Digite el número que desee: "))
+
+if(num<0):
+  print("El número digitado es negativo")
+else:
+  print("El número digitado es positivo")
+```
+
+## 4) Leer un real e imprimir si el número es mayor a 200 o no.
+
+### **Pseudocodigo**
+
+```
+Inicio
+
+  Definir num Como Real
+
+  num = 0.0
+  
+  Escribir "Digite el número que desee"
+  Leer num
+
+  Si (num>200):
+    Escribir "El número digitado es mayor que 200"
+  Sino:
+    Escribir "El número digitado es menor que 200"
+  Finsi
+
+Fin
+```
+
+### **Python**
+
+```python
+num = float(input("Digite el número que desee: "))
+
+if(num>200):
+  print("El número digitado es mayor que 200")
+else:
+  print("El número digitado es menor que 200")
+```
+
+## 5) Leer un real e imprimir si el número está en el rango de 50 y 100.
+
+### **Pseudocodigo**
+
+```
+Inicio
+
+  Definir num Como Real
+
+  num = 0.0
+  
+  Escribir "Digite el número que desee"
+  Leer num
+
+  Si (50<num<100):
+    Escribir "El número digitado está en el rango de 50 y 100"
+  Sino:
+    Escribir "El número digitado no está en el rango de 50 y 100"
+  Finsi
+
+Fin
+```
+
+### **Python**
+
+```python
+num = float(input("Digite el número que desee: "))
+
+if(50<num<100):
+  print("El número digitado está en el rango de 50 y 100")
+else:
+  print("El número digitado no está en el rango de 50 y 100")
+```
