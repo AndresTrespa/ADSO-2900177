@@ -1,0 +1,55 @@
+
+  
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-image: url(painting-mountain-lake-with-mountain-background.jpg);
+    background-size: 1879px 939px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.bingo-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    text-align: center;
+}
+.color {
+    background-color: rgb(48, 179, 240);
+}
+.accordion-body{
+    justify-content: center;
+}
+
+
+.accordion-button {
+    font-family: pixelifySans-Bold;
+    background-color: #cacaca;
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+.accordion-button.collapsed {
+    font-family: pixelifySans-Bold;
+    background-color: #a5a7a8; 
+    width: 310px;
+    height: 50px;
+}
+
