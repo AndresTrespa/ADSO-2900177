@@ -1,0 +1,277 @@
+body{
+	font-family: sans-serif;
+}
+h2{
+	font-size: 2.5rem;
+}
+.formas{
+	padding: 20px;
+	margin: 20px;
+}
+.cuadrado{
+	width: 100px;
+	height: 100px;
+	background-color: tomato;
+}
+.rectangulo{
+	width: 200px;
+	height: 100px;
+	background-color: tomato;
+}
+.rombo1{
+	width: 100px; 
+  height: 100px;
+  background: tomato;
+	-webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.rombo2{
+	width: 100px; 
+  height: 100px; 
+  background: #B22222;
+  -webkit-transform: skew(25deg, 0deg);
+  -moz-transform: skew(25deg, 0deg);
+  -ms-transform: skew(25deg, 0deg);
+  -o-transform: skew(25deg, 0deg);
+  transform: skew(25deg, 0deg);
+}
+.rombo3{
+	width: 100px; 
+  height: 100px; 
+  background: #B22222;
+  -webkit-transform: rotate(45deg) skew(15deg, 15deg);
+  -moz-transform: rotate(45deg) skew(15deg, 15deg);
+  -ms-transform: rotate(45deg) skew(15deg, 15deg);
+  -o-transform: rotate(45deg) skew(15deg, 15deg);
+  transform: rotate(45deg) skew(15deg, 15deg);
+}
+.triangulos{
+	width: 0px;
+	height: 0px;
+	border-top: solid 100px #008B8B;
+	border-right: solid 100px #9ACD32;
+	border-bottom: solid 100px #32CD32;
+	border-left: solid 100px #20B2AA;
+	margin-bottom: 20px;
+}
+.triangulo1{
+	width: 0;
+	height: 0;
+	border-top: solid 100px #008B8B;
+	border-right: solid 100px transparent;
+	border-left: solid 100px transparent;
+}
+.triangulo2{
+	width: 0;
+	height: 0;
+	border-top: solid 100px transparent;
+	border-right: solid 100px #9ACD32;
+	border-bottom: solid 100px transparent;
+}
+.triangulo3{
+	width: 0;
+	height: 0;
+	border-right: solid 100px transparent;
+	border-bottom: solid 100px #32CD32;
+	border-left: solid 100px transparent;
+}
+.triangulo4{
+	width: 0;
+	height: 0;
+	border-bottom: solid 100px transparent;
+	border-left: solid 100px #20B2AA;
+	border-top: solid 100px transparent;
+}
+.trapecio1{
+	width: 200px;
+	height: 0px;
+	border-top: solid 0px transparent;
+	border-right: solid 50px transparent;
+	border-bottom: solid 100px #FF00FF;
+	border-left: solid 50px transparent;
+}
+.trapecio2{
+	width: 0px;
+	height: 200px;
+	border-top: solid 50px transparent;
+	border-right: solid 100px #9932CC;
+	border-bottom: solid 50px transparent;
+	border-left: solid 0px transparent;
+}
+.circulo{
+	width: 150px;
+	height: 150px;
+	background-color: #DAA520;
+	border-radius: 50%;
+}
+.ovalo{
+	width: 250px;
+	height: 100px;
+	background-color: #DAA520;
+	border-radius: 50%;
+}
+.semicirculo1{
+	width: 150px;
+	height: 150px;
+	background-color: #FFD700;
+	border-radius: 0 100% 0 0;
+}
+.semicirculo2{
+	width: 200px;
+	height: 100px;
+	background-color: #FFD700;
+	border-radius: 100px 100px 0 0;
+}
+.pacman{
+	width: 0px;
+	height: 0px;
+	border-top: solid 100px #7B68EE;
+	border-right: solid 100px transparent;
+	border-bottom: solid 100px #7B68EE;
+	border-left: solid 100px #7B68EE;
+	margin-bottom: 20px;
+	border-radius: 100%;
+}
+.cono{
+	width: 0px;
+	height: 0px;
+	border-top: solid 150px #7B68EE;
+	border-right: solid 100px transparent;
+	border-bottom: solid 0px transparent;
+	border-left: solid 100px transparent;
+	border-radius: 100%;
+}
+.ribbon{
+	width: 0px;
+  height: 100px;
+    border-left: 50px solid #d9534f;
+    border-right: 50px solid #d9534f;
+    border-bottom: 35px solid transparent;
+}
+.luna{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	box-shadow: 40px 0px 0 #d9534f;
+}
+
+/*con ::before y ::after*/
+.caja1 i, .caja2 i{
+	color: #fff;
+	font-size: 3rem;
+	line-height: 80px;
+}
+.caja1{
+	width: 80px;
+	height: 80px;
+	background-color: tomato;
+	position: relative;
+	text-align: center;
+}
+.caja1::before{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: -40px;
+	border-right: solid 40px transparent;
+	border-bottom: solid 40px #32CD32;
+	border-left: solid 40px transparent;
+}
+.caja1::after{
+	content: '';
+	display: block;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-right: solid 40px #9ACD32;
+	border-bottom: solid 40px transparent;
+	border-left: solid 40px #20B2AA;
+}
+.caja2{
+	width: 80px;
+	height: 80px;
+	background-color: tomato;
+	position: relative;
+	text-align: center;
+}
+.caja2::before{
+	content:'';
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: -40px;
+	border-top: solid 40px transparent;
+	border-right: solid 40px #9ACD32;
+	border-bottom: solid 40px transparent;
+}
+.caja2::after{
+	content:'';
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	right: -40px;
+	border-bottom: solid 40px transparent;
+	border-left: solid 40px #20B2AA;
+	border-top: solid 40px transparent;
+}
+
+/*Diamante hecho por los chiquillos*/
+.diamante1{
+	width: 200px;
+	height: 0;
+	position: relative;
+	border-bottom: 70px solid #ADFF2F;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	margin-bottom: 180px;
+}
+.diamante1::after{
+	content:'';
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 69px;
+	left: -50px;
+	border-top: 150px solid #ADFF2F;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+}
+
+/*Diamante hecho por Seba*/
+.diamante2{
+	width: 0;
+	height: 0;
+	position: relative;
+	margin-bottom: 100px;
+}
+.diamante2::before{
+	content:'';
+	width: 180px;
+	height: 0;
+	display: block;
+	position: absolute;
+	top: -20px;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid tomato;
+	border-left: 50px solid transparent;
+}
+.diamante2::after{
+	content:'';
+	width: 0px;
+	height: 0;
+	display: block;
+	position: absolute;
+	top: 29px;
+	border-right: 90px solid transparent;
+	border-top:  100px solid tomato;
+	border-left: 90px solid transparent;
+}
