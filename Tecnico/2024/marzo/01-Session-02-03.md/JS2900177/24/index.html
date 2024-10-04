@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tabla, multi, resultado, num, par, impar
+        impar = 0
+        par = 0
+        tabla = 0
+        num = 5
+        resultado = 0
+        while (tabla < num) { 
+            tabla = tabla + 1
+            multi = 0
+            while (multi < num) {
+                resultado = tabla * multi + 1 
+                console.log(tabla + "x" + multi + "=" + resultado)
+                if (resultado%2==0){ 
+                    par++ 
+                    console.log("Es impar")
+                } else {
+                    impar++ 
+                    console.log("Es par") 
+                }
+                multi++
+            }
+        }
+        console.log("Total de impares: " + impar) 
+        console.log("Total de pares: " + par) 
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sueldoP
+        let salarioM
+        let salud
+        let pension
+        let arl
+        let retencion
+        let valorD
+        let diasT
+        let sueldoTotal
+        let subTotal
+        let deducibles
+
+        valorD = 1200
+        diasT = 30
+        
+        sueldoP = valorD*diasT
+
+        if(sueldoP<=salarioM*2){
+            subTotal=114.000
+        }
+        else{
+            subTotal=0
+        }
+        salud=sueldoP*0.12
+        pension=sueldoP*0.16
+        arl=sueldoP*0.052
+
+        if(sueldoP>=salarioM*4){
+            retencion=sueldoP*0.14
+            deducibles=salud+pension+arl
+            sueldoTotal=(sueldoP+subTotal)-(retencion+deducibles)
+            
+            console.log("El sueldo Total de la persona: "+sueldoTotal)
+            console.log(sueldoP)
+            console.log(subTotal)
+            console.log(salud)
+            console.log(pension)
+            console.log(arl)
+            console.log(retencion)
+        }
+        else{
+            retencion=0
+        }
+
+    </script>
+</body>
+</html>

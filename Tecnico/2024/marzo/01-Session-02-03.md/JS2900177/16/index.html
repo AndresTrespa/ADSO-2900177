@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let not1,not2,not3,pro1,pro2,pro3,sumPro
+
+        not1 = 40
+        not2 = 10
+        not3 = 50
+        pro1=not1*0.2
+        pro2=not2*0.35
+        pro3=not3*0.45
+
+        sumPro=pro1+pro2+pro3
+        if(sumPro>4.5){
+            console.log("Es una nota superior: ")
+        }
+        else{
+            if(sumPro<=4.5 && sumPro>3.5){
+                console.log("Es una nota buena: ")
+            }
+                else{
+                    if(sumPro<=3.5 && sumPro>3){
+                    console.log("Es una nota media: ")
+                }
+                    else{
+                    console.log("Es una nota mala: ")
+                }
+            }
+        }
+        console.log(pro1)
+        console.log(pro2)
+        console.log(pro3)
+        console.log(sumPro)
+        
+    </script>
+</body>
+</html>

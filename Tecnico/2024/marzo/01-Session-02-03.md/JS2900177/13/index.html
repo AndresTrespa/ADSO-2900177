@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let aCu1
+        let aCu2
+        let aCu3
+        let lado1
+        let lado2
+        let lado3
+        lado1 = 4
+        lado2 = 7
+        lado3 = 12
+        aCu1 = lado1*lado1
+        aCu2 = lado2*lado2
+        aCu3 = lado3*lado3
+
+        if(aCu1==aCu2 && aCu1==aCu3 && aCu2==aCu3 ){
+        console.log("Los tres números son iguales");
+        }
+        else{
+            if(aCu1>aCu2 && aCu1>aCu3){
+                console.log("El número "+aCu1+" es mayor: ");
+            }
+            else{
+                if(aCu2>aCu1 && aCu2>aCu3){
+                    console.log("El número "+aCu2+" es mayor: ");
+                }
+                else{
+                    console.log("El número "+aCu3+" es mayor: ");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

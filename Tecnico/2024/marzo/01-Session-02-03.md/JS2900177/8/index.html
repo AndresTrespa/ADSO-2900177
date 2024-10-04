@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pTotal
+        let diasT
+        let valorD
+        let sueldo
+        let salud
+        let pension
+        let arl
+        let descuento
+
+        diasT = 30
+        valorD = 7000
+
+        sueldo = diasT*valorD
+        salud = sueldo*0.12
+        pension = sueldo*0.14
+        arl = sueldo*0.52
+        descuento = salud+pension+arl
+        pTotal = sueldo-descuento
+
+        console.log("El sueldo es de: "+sueldo)
+        console.log("La salud es de: "+salud)
+        console.log("La pension es de: "+pension)
+        console.log("El arl es de: "+arl)
+        console.log("El descuendo es de: "+descuento)
+        console.log("El pTotal es de "+pTotal)
+    </script>
+</body>
+</html>
